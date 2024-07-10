@@ -12,7 +12,7 @@ dotenv.config();
 const DbPassword = process.env.USER_PASSWORD1;
 mongoose
   .connect(
-    `mongodb+srv://ashrafalikakozai9876:${DbPassword}@hackathon.91zacg8.mongodb.net/?retryWrites=true&w=majority&appName=hackathon`
+    `mongodb+srv://${DbAddress}:${DbPassword}@hackathon.91zacg8.mongodb.net/?retryWrites=true&w=majority&appName=hackathon`
   )
   .then(() => {
     console.log("DataBase is connected--->");
